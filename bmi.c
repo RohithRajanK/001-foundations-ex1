@@ -1,5 +1,4 @@
 #include<stdio.h>
-#include<math.h>
 #include<cs50.h>
 int main(void)
 {
@@ -8,7 +7,8 @@ name=get_string("Enter your name ");
 float h,w;
 h=get_float("Enter your height (in m) ");
 w=get_float("Enter your weight (in kg) ");
-float bmi=(w/pow(h,2));
+float pow=(h*h);
+float bmi=(w/pow);
 printf("%s %.2f ",name,bmi);
 if(bmi<18.5)
 {
